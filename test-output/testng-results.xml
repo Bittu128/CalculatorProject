@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="86287" started-at="2019-07-22T10:43:55Z" finished-at="2019-07-22T10:45:21Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.mySampleStory@5442a311]" name="feature" class="cucumber.api.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Test" duration-ms="86287" started-at="2019-07-22T10:43:55Z" finished-at="2019-07-22T10:45:21Z">
+      <class name="TestRunner.mySampleStory">
+        <test-method status="PASS" signature="setUpClass()[pri:0, instance:TestRunner.mySampleStory@5442a311]" name="setUpClass" is-config="true" duration-ms="340" started-at="2019-07-22T16:13:55Z" finished-at="2019-07-22T16:13:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="PASS" signature="feature(cucumber.api.testng.CucumberFeatureWrapper)[pri:0, instance:TestRunner.mySampleStory@5442a311]" name="feature" duration-ms="85659" started-at="2019-07-22T16:13:55Z" description="Runs Cucumber Feature" data-provider="features" finished-at="2019-07-22T16:15:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[calculator functionality]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- feature -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:TestRunner.mySampleStory@5442a311]" name="tearDownClass" is-config="true" duration-ms="148" started-at="2019-07-22T16:15:21Z" finished-at="2019-07-22T16:15:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- TestRunner.mySampleStory -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
