@@ -61,8 +61,8 @@ public class CalculatorScreen {
 			
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_ALT);
-			robot.keyPress(KeyEvent.VK_H);
-			robot.keyRelease(KeyEvent.VK_H);
+			//robot.keyPress(KeyEvent.VK_H);
+			//robot.keyRelease(KeyEvent.VK_H);
 			robot.keyPress(KeyEvent.VK_2);
 			robot.keyRelease(KeyEvent.VK_ALT);	
 			TimeUnit.MILLISECONDS.sleep(5000);
