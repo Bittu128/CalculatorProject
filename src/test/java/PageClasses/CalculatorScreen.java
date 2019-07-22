@@ -61,9 +61,8 @@ public class CalculatorScreen {
 			
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_ALT);
-			//robot.keyPress(KeyEvent.VK_H);
-			//robot.keyRelease(KeyEvent.VK_H);
 			robot.keyPress(KeyEvent.VK_2);
+			robot.keyRelease(KeyEvent.VK_2);	
 			robot.keyRelease(KeyEvent.VK_ALT);	
 			TimeUnit.MILLISECONDS.sleep(5000);
 			for (int i =0; i<numArr.length;i++)
@@ -94,8 +93,8 @@ public class CalculatorScreen {
 			Assert.assertTrue("Addition Functionality is working Fine", Counter==Double.parseDouble(getClipBoardValue()));		
 			robot.keyRelease(KeyEvent.VK_EQUALS);
 			robot.keyRelease(KeyEvent.VK_EQUALS);
-			robot.keyPress(KeyEvent.VK_0);
-			robot.keyRelease(KeyEvent.VK_0);
+			robot.keyPress(KeyEvent.VK_ESCAPE);
+			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			bnflag = true;
 			
 						
@@ -215,8 +214,8 @@ public class CalculatorScreen {
 			robot.keyRelease(KeyEvent.VK_C);
 			TimeUnit.MILLISECONDS.sleep(5000);
 			Assert.assertTrue("Division Functionality is working Fine", Counter==Double.parseDouble(getClipBoardValue()));
-			robot.keyPress(KeyEvent.VK_0);
-			robot.keyRelease(KeyEvent.VK_0);
+			robot.keyPress(KeyEvent.VK_ESCAPE);
+			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			bnflag = true;
 			
 		} catch (Exception e) {
@@ -274,8 +273,8 @@ public class CalculatorScreen {
 			TimeUnit.MILLISECONDS.sleep(5000);
 			System.out.println(Counter);
 			Assert.assertTrue("Mod Functionality is working Fine", Counter==Double.parseDouble(getClipBoardValue()));
-			robot.keyPress(KeyEvent.VK_0);
-			robot.keyRelease(KeyEvent.VK_0);
+			robot.keyPress(KeyEvent.VK_ESCAPE);
+			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			bnflag = true;
 						
 		} catch (Exception e) {
@@ -309,24 +308,12 @@ public class CalculatorScreen {
 			robot.keyPress(keyCode);
 			robot.keyRelease(keyCode);
 			TimeUnit.MILLISECONDS.sleep(5000);
-			robot.keyPress(KeyEvent.VK_SHIFT);
-			robot.keyPress(KeyEvent.VK_6);			
-			robot.keyRelease(KeyEvent.VK_6);
-			robot.keyRelease(KeyEvent.VK_SHIFT);
-			robot.keyPress(KeyEvent.VK_2);
-			robot.keyRelease(KeyEvent.VK_2);
-			robot.keyPress(KeyEvent.VK_SHIFT);
-			robot.keyPress(KeyEvent.VK_6);
-			robot.keyRelease(KeyEvent.VK_6);
-			robot.keyRelease(KeyEvent.VK_SHIFT);
-			robot.keyPress(KeyEvent.VK_2);
-			robot.keyRelease(KeyEvent.VK_2);
-			robot.keyPress(KeyEvent.VK_SHIFT);
-			robot.keyPress(KeyEvent.VK_6);
-			robot.keyRelease(KeyEvent.VK_6);
-			robot.keyRelease(KeyEvent.VK_SHIFT);
-			robot.keyPress(KeyEvent.VK_2);
-			robot.keyRelease(KeyEvent.VK_2);
+			robot.keyPress(KeyEvent.VK_Q);	
+			robot.keyRelease(KeyEvent.VK_Q);
+			robot.keyPress(KeyEvent.VK_Q);	
+			robot.keyRelease(KeyEvent.VK_Q);
+			robot.keyPress(KeyEvent.VK_Q);	
+			robot.keyRelease(KeyEvent.VK_Q);
 			robot.keyPress(KeyEvent.VK_EQUALS);
 			robot.keyRelease(KeyEvent.VK_EQUALS);
 			robot.keyPress(KeyEvent.VK_CONTROL);
@@ -335,8 +322,8 @@ public class CalculatorScreen {
 			robot.keyRelease(KeyEvent.VK_C);
 			TimeUnit.MILLISECONDS.sleep(5000);
 			Assert.assertTrue("Square Functionality is working Fine", Counter == Double.parseDouble(getClipBoardValue()));
-			robot.keyPress(KeyEvent.VK_0);
-			robot.keyRelease(KeyEvent.VK_0);
+			robot.keyPress(KeyEvent.VK_ESCAPE);
+			robot.keyRelease(KeyEvent.VK_ESCAPE);
 			bnflag = true;
 						
 		} catch (Exception e) {
