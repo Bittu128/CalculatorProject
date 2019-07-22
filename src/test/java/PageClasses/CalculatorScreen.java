@@ -252,10 +252,8 @@ public class CalculatorScreen {
 			}
 			
 			TimeUnit.MILLISECONDS.sleep(5000);
-			robot.keyPress(KeyEvent.VK_SHIFT);
-			robot.keyPress(KeyEvent.VK_5);
-			robot.keyRelease(KeyEvent.VK_5);
-			robot.keyRelease(KeyEvent.VK_SHIFT);
+			robot.keyPress(KeyEvent.VK_D);
+			robot.keyRelease(KeyEvent.VK_D);
 			for (int i =0; i<num2.length();i++)
 			{
 				
